@@ -1,0 +1,17 @@
+<div class="contacts">
+
+    <input type="text" [(ngModel)]="inputText" >
+    <h3>{{inputText}}</h3>
+    <app-input (eventOnChange)="handlerInput($event)"
+        [styles]="{'width': '50%'}"
+        [errorData]="error"
+    >
+
+    </app-input>
+    <app-button [value]="'send'" (eventClick)="handlerClick()"></app-button> 
+
+
+    <pre>
+        {{drinksData | json}}
+    </pre>
+</div>

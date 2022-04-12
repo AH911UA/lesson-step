@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --primary-color-bc: #81D4FA;
+    --primary-color-text: #212121;
+    --info: yellow;
+    --secondary-color-bc: #009688;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

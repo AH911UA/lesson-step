@@ -1,0 +1,21 @@
+.input {
+
+  & input {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 8px;
+    outline: none;
+
+    &:focus {
+      outline: 3px solid var(--secondary-color-bc);
+    }
+  }
+
+  &_error {
+    color: red;
+  }
+}

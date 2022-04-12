@@ -1,0 +1,6 @@
+<div class="input">
+    <input [type]="type" [style]="styles"  (input)="handlerOnChange($event)" />
+    <div class="input_error" *ngIf="errorData">
+        <p> error:  {{errorData}} </p>
+    </div>
+</div>

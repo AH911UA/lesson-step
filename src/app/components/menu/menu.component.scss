@@ -1,0 +1,18 @@
+.menu {
+    background-color: var(--secondary-color-bc);
+    ul {
+        display: flex;
+
+        li {
+            padding: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-transform: capitalize;
+            
+            &:hover {
+                background-color: var(--info);
+            }
+        }
+    }
+}

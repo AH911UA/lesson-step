@@ -1,0 +1,16 @@
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+
+  &_item {
+    width: 250px;
+    padding: 20px;
+    border: 2px dotted var(--primary-color-text);
+    cursor: pointer;
+  }
+}
+
+.postImportant {
+  border-color: brown;
+}

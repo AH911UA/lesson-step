@@ -1,0 +1,21 @@
+<div class="home">
+
+    <button (click)="handlerDataClick(1)"> data 1 </button>
+    <button (click)="handlerDataClick(2)"> data 2 </button>
+    <button (click)="handlerDataClick(3)"> data 3 </button>
+
+    <div [ngSwitch]="typeData">
+        <ng-template [ngSwitchCase]="'Адын'">
+            <p> data 1 </p>
+        </ng-template>
+
+        <ng-template ngSwitchCase="2два">
+            <p> data 2 </p>
+        </ng-template>
+
+        <ng-template ngSwitchCase="333">
+            <p> data 3 </p>
+        </ng-template>
+    </div>
+
+</div>

@@ -1,0 +1,15 @@
+<!-- <pre>
+    {{drinks | json}}
+</pre> -->
+
+<div class="posts" *ngIf="drinks; else load">
+    <div class="posts_item" *ngFor="let item of drinks" [routerLink]="item.link">
+        <h3>
+            {{item.strDrink}}
+        </h3>
+    </div>
+</div>
+
+<ng-template #load>
+    <h1>...load</h1>
+</ng-template>
